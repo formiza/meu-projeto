@@ -37,3 +37,44 @@ p {
 .highlight {
     color: #555555; /* cinza/preto */
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+    margin: 0;
+    padding: 0 10px; /* diminui as margens nas telas pequenas */
+}
+
+section {
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%; /* faz a seção ocupar a largura da tela em celulares */
+}
+
+h1, h2 {
+    font-size: 1.5em; /* ajuste em telas pequenas */
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Media queries para telas pequenas */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.3em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    section {
+        padding: 10px;
+        margin: 10px auto;
+    }
+}
+
+
